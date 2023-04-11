@@ -209,7 +209,7 @@ footer {
   font-size: 32px;
   font-weight: bold;
   color: var(--Purple);
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
 }
 .subtitle-advantage {
@@ -219,7 +219,8 @@ footer {
   margin-top: 10px;
   text-align: center;
   width: 90%;
-  margin: 5%;
+  margin-left: 5%;
+  margin-right: 5%;;
 }
 
 .container-first {
