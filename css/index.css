@@ -26,21 +26,22 @@ body {
   position: relative;
   height: 100vh;
   background-color: var(--White);
-  z-index: 1;
 }
 
 /*ID's*/
-#home-purple {
+#home-purple-advantages {
+  position: relative;
   width: 100%;
-  height: 730px;
-  background-color: var(--Purple);
+  height: 1460px;
+  background-color: var(--BlancoRaro);
   clip-path: ellipse(170% 100% at 50% 0%);
 }
 
 #section-advantages {
+  position: absolute;
   width: 100%;
   height: 720px;
-  background-color: var(--BlancoRaro);
+  background-color: hsla(62, 94%, 53%, 0.5);
   clip-path: ellipse(170% 100% at 50% 0%);
 }
 #pattern-1 {
@@ -57,11 +58,11 @@ body {
 
 #pattern-mobile {
   position: absolute;
-  bottom: 0%;
-  left: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 440px;
   width: 767px;
-  z-index: 2;
 }
 /*Buttons*/
 #button-line {
@@ -94,6 +95,15 @@ body {
   border: 2px solid var(--Green);
 }
 /*Class*/
+.purple-home {
+  position: relative;
+  width: 100%;
+  height: 730px;
+  background-color: var(--Purple);
+  clip-path: ellipse(170% 100% at 50% 0%);
+  z-index: 0;
+}
+
 .navegation-home {
   display: flex;
   justify-content: space-between;
@@ -103,10 +113,12 @@ body {
 
 .navegation-title {
   height: 260px;
+  max-width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-content: center;
+  overflow-x: clip;
 }
 
 .contenedor-title-button {
@@ -137,4 +149,48 @@ body {
 .section-home-button {
   width: 160px;
   height: 60px;
+}
+
+.advantages-workit {
+  margin: 250px 161px 171px 165px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advantages-number {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 305px;
+}
+
+.circle-advantage {
+  font-family: fraunces;
+  color: var(--Purple);
+  font-size: 25px;
+  border: solid 1px var(--Purple);
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-advantage{
+    font-family: fraunces;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--Purple);
+    margin-top: 20px;
+}
+.subtitle-advantage{
+    font-family: Manrope;
+    font-size: 18px;
+    color: var(--Purple);
+    margin-top: 10px;
+    text-align: center;
+    padding: 0 75px 0 75px;
 }
