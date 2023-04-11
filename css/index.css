@@ -321,6 +321,7 @@ footer {
     flex-direction: row;
     height: 108px;
     margin-bottom: 45px;
+    width: auto;
   }
   #home-purple-advantages {
     height: 1320px;
@@ -339,6 +340,7 @@ footer {
   .circle-advantage {
     width: 83.4px;
     height: 50px;
+    margin-bottom: 0;
   }
   #founder-img {
     width: 280px;
