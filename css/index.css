@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Colors */
+:root {
+  --Purple: #24053e;
+  --Green: #44ffa1;
+  --MarronRaro: #584d62;
+  --BlancoRaro: #fcf8ff;
+  --White: #ffffff;
+}
+/* Fonts */
+@font-face {
+  font-family: Manrope;
+  src: url(../starter-code/assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Fraunces;
+  src: url(../starter-code/assets/fonts/fraunces/Fraunces-VariableFont_SOFT\WONK\opsz\wght.ttf);
+}
+body {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background-color: var(--White);
+  z-index: 1;
+}
+
+/*ID's*/
+#home-purple {
+  width: 100%;
+  height: 730px;
+  background-color: var(--Purple);
+  clip-path: ellipse(170% 100% at 50% 0%);
+}
+
+#section-advantages {
+  width: 100%;
+  height: 720px;
+  background-color: var(--BlancoRaro);
+  clip-path: ellipse(170% 100% at 50% 0%);
+}
+#pattern-1 {
+  position: absolute;
+  left: -5%;
+  top: -10%;
+}
+
+#pattern-2 {
+  position: absolute;
+  right: -2%;
+  bottom: -35%;
+}
+
+#pattern-mobile {
+  position: absolute;
+  bottom: 0%;
+  left: 30%;
+  height: 440px;
+  width: 767px;
+  z-index: 2;
+}
+/*Buttons*/
+#button-line {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+  font-family: Manrope;
+  font-size: 18px;
+  border-bottom: 2px solid var(--Green);
+  padding-bottom: 3px;
+}
+
+#button-line:hover {
+  color: var(--Green);
+}
+
+#button-press {
+  color: var(--Purple);
+  background-color: var(--Green);
+  border: none;
+  font-family: Manrope;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#button-press:hover {
+  color: var(--Green);
+  background-color: var(--Purple);
+  border: 2px solid var(--Green);
+}
+/*Class*/
+.navegation-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 55px 165px 55px 165px;
+}
+
+.navegation-title {
+  height: 260px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.contenedor-title-button {
+  width: 635px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contenedor-title {
+  text-align: center;
+}
+.Heading-l {
+  font-family: fraunces;
+  font-size: 80px;
+  line-height: 80px;
+  font-weight: bold;
+  color: var(--White);
+}
+
+.underline-text {
+  border-bottom: 2px solid var(--Green);
+  display: inline-block;
+}
+
+.section-home-button {
+  width: 160px;
+  height: 60px;
+}
