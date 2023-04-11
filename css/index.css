@@ -28,20 +28,20 @@ body {
   background-color: var(--White);
 }
 
-footer{
-    width: 100%;
-    padding-bottom: 110px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+footer {
+  width: 100%;
+  padding-bottom: 110px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 /*ID's*/
-#founder-img{
-    width: 475px;
-    height: 475px;
-    position: absolute;
-    z-index: 0;
+#founder-img {
+  width: 475px;
+  height: 475px;
+  position: absolute;
+  z-index: 0;
 }
 #be-the-first {
   margin-top: 100px;
@@ -49,8 +49,8 @@ footer{
   width: 100%;
   height: 650px;
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 #home-purple-advantages {
   position: relative;
@@ -72,10 +72,10 @@ footer{
   bottom: -35%;
 }
 
-#pattern-3{
-    position: absolute;
-    right: 10%;
-    bottom: -15%;
+#pattern-3 {
+  position: absolute;
+  right: 10%;
+  bottom: -15%;
 }
 #pattern-mobile {
   position: absolute;
@@ -171,10 +171,10 @@ footer{
   width: 160px;
   height: 60px;
 }
-.section-founder{
-    width: 190px;
-    height: 60px;
-    font-weight: bold;
+.section-founder {
+  width: 190px;
+  height: 60px;
+  font-weight: bold;
 }
 .advantages-workit {
   margin: 250px 161px 171px 165px;
@@ -226,46 +226,150 @@ footer{
   position: relative;
 }
 
-.card-founder{
-    position: absolute;
-    width: 730px;
-    height: 415px;
-    background: var(--Purple);
-    padding: 60px;
-    top: 30%;
-    right: 0%;
-    display: flex;
-    justify-content: space-evenly;
+.card-founder {
+  position: absolute;
+  width: 730px;
+  height: 415px;
+  background: var(--Purple);
+  padding: 60px;
+  top: 30%;
+  right: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.title-founder {
+  font-family: fraunces;
+  font-size: 45px;
+  font-weight: bold;
+  color: var(--White);
+}
+
+.subtitle-founder {
+  font-family: Manrope;
+  font-size: 18px;
+  color: var(--White);
+  margin-top: 10px;
+  padding-right: 20px;
+}
+
+.contenedor-footer {
+  width: 116px;
+  height: 102px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-media {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.social-media svg:hover {
+  cursor: pointer;
+}
+
+#color-svg:hover {
+  fill: var(--Purple);
+}
+
+/*Formato Movil*/
+@media screen and (max-width: 375px) {
+  /*Images*/
+  #pattern-1 {
+    display: none;
+  }
+  #pattern-2 {
+    display: none;
+  }
+  #pattern-3 {
+    display: none;
+  }
+  #founder-img {
+    width: 260px;
+    height: 260px;
+  }
+  #pattern-mobile {
+    height: 185px;
+    width: 320px;
+    top: 32%;
+  }
+  /*Buttons*/
+  #button-line {
+    font-size: 14px;
+  }
+  #button-press {
+    font-size: 14px;
+  }
+  /*Text*/
+  .title-founder{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .subtitle-founder{
+    font-size: 16px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  .Heading-l {
+    font-size: 40px;
+    line-height: 40px;
+    padding: 20px 30px 0px 30px;
+  }
+  .subtitle-advantage {
+    padding: 0;
+    font-size: 14px;
+  }
+  /*Clases*/
+  .purple-home {
+    height: 480px;
+  }
+  .navegation-home {
+    padding: 35px 15px 35px 15px;
+  }
+  .advantages-workit {
     flex-direction: column;
-    align-items: flex-start;
-}
-.title-founder{
-    font-family: fraunces;
-    font-size: 45px;
-    font-weight: bold;
-    color: var(--White);
-}
-
-.subtitle-founder{
-    font-family: Manrope;
-    font-size: 18px;
-    color: var(--White);
-    margin-top: 10px;
-    padding-right: 20px;
-}
-
-.contenedor-footer{
-    width: 116px;
-    height: 102px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.social-media{
+  }
+  .section-home-button {
+    width: 130px;
+    height: 55px;
+  }
+  .advantages-workit {
+    margin: 150px 35px 0px 35px;
+  }
+  .advantages-number {
+    height: 225px;
+    margin-top: 20px;
+  }
+  .container-first {
     width: 100%;
+    position: relative;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
+    height: 605px;
+  }
+
+  .card-founder{
+    width: 96%;
+    height: 375px;
+    margin: 0 2% 0 2%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+  }
+
+  #be-the-first{
+    margin-bottom: 0;
+  }
+
+  footer{
+    padding-bottom: 60px;
+  }
 }
