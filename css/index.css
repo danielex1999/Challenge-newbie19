@@ -180,15 +180,16 @@ footer {
   margin: 250px 161px 171px 165px;
   width: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center
 }
 .advantages-number {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  height: 305px;
+  height: 308px;
+  width: 350px;
 }
 
 .circle-advantage {
@@ -202,6 +203,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .title-advantage {
@@ -220,7 +222,7 @@ footer {
   text-align: center;
   width: 90%;
   margin-left: 5%;
-  margin-right: 5%;;
+  margin-right: 5%;
 }
 
 .container-first {
@@ -228,7 +230,11 @@ footer {
   height: 100%;
   position: relative;
 }
-
+.contain-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 .card-founder {
   position: absolute;
   width: 730px;
@@ -279,7 +285,90 @@ footer {
 #color-svg:hover {
   fill: var(--Purple);
 }
+/*Formato Tablet*/
+@media screen and  (max-width: 768px) and (min-width: 376px) {
+  .purple-home {
+    height: 540px;
+  }
+  .navegation-home {
+    padding: 35px;
+  }
+  #pattern-1 {
+    left: -27%;
+    top: -5%;
+  }
+  #pattern-2 {
+    right: -12%;
+    top: 63%;
+  }
+  #pattern-mobile {
+    height: 296px;
+    width: 514px;
+    top: 42%;
+    left: 55%;
+  }
+  .Heading-l {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: normal;
+    color: var(--White);
+  }
+  .advantages-workit {
+    flex-direction: column;
+    margin: 200px 95px 100px 95px;
+  }
+  .advantages-number {
+    flex-direction: row;
+    height: 108px;
+    margin-bottom: 45px;
+  }
+  #home-purple-advantages {
+    height: 1320px;
+  }
+  .title-advantage {
+    text-align: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0;
+  }
+  .subtitle-advantage {
+    text-align: left;
+    font-size: 16px;
+  }
+  .circle-advantage {
+    width: 83.4px;
+    height: 50px;
+  }
+  #founder-img {
+    width: 280px;
+    height: 280px;
+  }
+  .container-first {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .card-founder {
+    width: 515px;
+    height: 375px;
+  }
 
+  #be-the-first {
+    margin-bottom: 0;
+  }
+
+  .title-founder {
+    font-size: 40px;
+  }
+  .subtitle-founder {
+    font-size: 15px;
+  }
+  #pattern-3 {
+    right: 5%;
+    bottom: -25%;
+  }
+}
 /*Formato Movil*/
 @media screen and (max-width: 375px) {
   /*Images*/
@@ -309,12 +398,12 @@ footer {
     font-size: 14px;
   }
   /*Text*/
-  .title-founder{
+  .title-founder {
     font-size: 30px;
     text-align: center;
   }
 
-  .subtitle-founder{
+  .subtitle-founder {
     font-size: 16px;
     text-align: center;
     padding: 0;
@@ -358,7 +447,7 @@ footer {
     height: 605px;
   }
 
-  .card-founder{
+  .card-founder {
     width: 96%;
     height: 375px;
     margin: 0 2% 0 2%;
@@ -368,11 +457,16 @@ footer {
     line-height: 25px;
   }
 
-  #be-the-first{
+  #be-the-first {
     margin-bottom: 0;
   }
 
-  footer{
+  footer {
     padding-bottom: 60px;
   }
+  .circle-advantage{
+    margin-bottom: 0;
+  }
 }
+
+
